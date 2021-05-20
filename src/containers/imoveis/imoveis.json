@@ -1,0 +1,110 @@
+[
+    {
+        "name": "JBM202 - Suite vista mar resort",
+        "description": "Jurerê internacional, 8 hospedes, 2 quartos",
+        "maxGuests": 8,
+        "cleaningFee": 250,
+        "guarantee": 1350,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1800, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "../../../imoveis/imovel11.jpg",
+        "imageDetail": "./imovel12.jpg"
+    },
+    {
+        "name": "JBM203 - Suite vista mar resort",
+        "description": "Jurerê internacional, 4 hospedes, 1 quartos",
+        "maxGuests": 4,
+        "cleaningFee": 230,
+        "guarantee": 1950,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "./imovel21.jpg",
+        "imageDetail": "./imovel22.jpg"
+    },
+    {
+        "name": "JBM204 - Suite vista mar resort",
+        "description": "Jurerê internacional, 4 hospedes, 1 quartos",
+        "maxGuests": 4,
+        "cleaningFee": 230,
+        "guarantee": 1950,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "./imovel21.jpg",
+        "imageDetail": "./imovel22.jpg"
+    },
+    {
+        "name": "JBM205 - Suite vista mar resort",
+        "description": "Jurerê internacional, 4 hospedes, 1 quartos",
+        "maxGuests": 4,
+        "cleaningFee": 230,
+        "guarantee": 1950,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "./imovel21.jpg",
+        "imageDetail": "./imovel22.jpg"
+    },
+    {
+        "name": "JBM206 - Suite vista mar resort",
+        "description": "Jurerê internacional, 4 hospedes, 1 quartos",
+        "maxGuests": 4,
+        "cleaningFee": 230,
+        "guarantee": 1950,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "./imovel21.jpg",
+        "imageDetail": "./imovel22.jpg"
+    },
+    {
+        "name": "JBM207 - Suite vista mar resort",
+        "description": "Jurerê internacional, 4 hospedes, 1 quartos",
+        "maxGuests": 4,
+        "cleaningFee": 230,
+        "guarantee": 1950,
+        "district": "Jurerê internacional",
+        "status": true,
+        "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
+        "convenience": [
+            "TV",
+            "Wi-fi",
+            "Estacionamento",
+            "Elevador"
+        ],
+        "image": "./imovel21.jpg",
+        "imageDetail": "./imovel22.jpg"
+    }
+]

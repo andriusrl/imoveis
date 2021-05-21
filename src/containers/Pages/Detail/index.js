@@ -1,9 +1,18 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import imoveis from "../../imoveis/imoveis.json"
+import { HeaderValues } from "../../providers/HeaderValues";
 import { StatusFalse, StatusTrue, Detail2, Title, SubTitle, Detail1, BoxBorder, Division, DetailWrapper, ImagePropertieDetailWrapper, PropertieDetailWrapper, ImagePropertieDetail, LiConvenience, LiYes, LiNo, UlConvenience } from "./style"
 
 function Detail() {
+  const { headerValues, setHeaderValues } = HeaderValues()
+  useEffect(() => {
+    const newHeaderValues = headerValues
+    setHeaderValues({
+      ...newHeaderValues,
+      filterSwitch: true
+    })
+  }, [])
   const { id } = useParams();
 
   const propertieDetail = imoveis.find(propertie => propertie.id === Number(id))

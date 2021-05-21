@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HeaderValues } from "../../providers/HeaderValues";
 import imoveis from "../../imoveis/imoveis.json"
-import imagem from "../../imoveis/imovel61.jpg"
-import {Division, PItem, SelectOrder, ImagePropertie, InfoWrapper, PropertiesWrapper, Wrapper, Title, PropertiesLength, ButtonOrder, TitleItem, DescriptionItem, ItemWrapper } from "./style"
+import { Division, PItem, SelectOrder, ImagePropertie, InfoWrapper, PropertiesWrapper, Wrapper, Title, PropertiesLength, TitleItem, DescriptionItem, ItemWrapper } from "./style"
 
 function Properties() {
   const { headerValues, setHeaderValues } = HeaderValues()
@@ -35,7 +34,7 @@ function Properties() {
           imoveis.map((propertie, index) => {
             return (
               <ItemWrapper>
-                <Link to="/propriedades/detalhe">
+                <Link to={`/propriedades/detalhe/${propertie.id}`}>
                   <ImagePropertie src={propertie.image} key={propertie.name} />
                   <TitleItem>{propertie.name}</TitleItem>
                   <DescriptionItem>{propertie.description}</DescriptionItem>

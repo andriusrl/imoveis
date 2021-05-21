@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import imoveis from "../../imoveis/imoveis.json"
-import { Detail2, Title, SubTitle, Detail1, BoxBorder, Division, DetailWrapper, ImagePropertieDetailWrapper, PropertieDetailWrapper, ImagePropertieDetail, LiConvenience, LiYes, LiNo } from "./style"
+import { StatusFalse, StatusTrue, Detail2, Title, SubTitle, Detail1, BoxBorder, Division, DetailWrapper, ImagePropertieDetailWrapper, PropertieDetailWrapper, ImagePropertieDetail, LiConvenience, LiYes, LiNo, UlConvenience } from "./style"
 
 function Detail() {
 
@@ -19,8 +19,15 @@ function Detail() {
       <DetailWrapper>
         <div>
           <Title>{propertieDetail.name}</Title>
-          <SubTitle>{propertieDetail.district}</SubTitle>
-          <p>{propertieDetail.status ? "ativo" : "desativado"}</p>
+          <SubTitle>
+            {propertieDetail.district}
+            <ul>
+              <li>
+                {propertieDetail.status ? <StatusTrue>ativo</StatusTrue> : <StatusFalse>desativado</StatusFalse>}
+              </li>
+            </ul>
+          </SubTitle>
+
         </div>
         <div>
           <Division />
@@ -41,64 +48,145 @@ function Detail() {
           <h3>Comodidades</h3>
           <Division />
           <Detail2>
-            <ul>
+            <UlConvenience>
               <LiConvenience>
-                Estacionamento
-              {
+                <li>Estacionamento</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Estacionamento"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Elevador
-              {
+                <li>Elevador</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Elevador"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Porteiro
-              {
+                <li>Porteiro</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Porteiro"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Piscina Privada
-              {
+                <li>Piscina Privada</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Piscina Privada"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Geladeira
-              {
+                <li>Geladeira</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Geladeira"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Ar Condicionado
-              {
+                <li>Ar Condicionado</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Ar condicionado"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
               <LiConvenience>
-                Internet
-              {
+                <li>Internet</li>
+                {
                   propertieDetail.convenience.find(
                     convenience => convenience === "Internet"
                   ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
                 }
               </LiConvenience>
-            </ul>
+              {/* A PARTIR DAQUI */}
+              <LiConvenience>
+                <li>Wi-fi</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Wi-fi"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Canais a Cabo</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Canais a Cabo"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Jacuzzi</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Jacuzzi"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Microondas</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Microondas"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Sofá</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Sofá"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Cozinha Completa</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Cozinha Completa"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>TV</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "TV"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Cabides</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Cabides"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Itens Básicos de Banheiro</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Itens Básicos de Banheiro"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+              <LiConvenience>
+                <li>Toalhas</li>
+                {
+                  propertieDetail.convenience.find(
+                    convenience => convenience === "Toalhas"
+                  ) ? <LiYes>sim</LiYes> : <LiNo>não</LiNo>
+                }
+              </LiConvenience>
+            </UlConvenience>
           </Detail2>
         </div>
       </DetailWrapper>

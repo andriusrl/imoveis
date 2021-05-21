@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "JBM202 - Suite vista mar resort",
         "description": "Jurerê internacional, 8 hospedes, 2 quartos",
         "maxGuests": 8,
@@ -14,10 +15,10 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "../../../imoveis/imovel11.jpg",
-        "imageDetail": "./imovel12.jpg"
+        "image": "https://i.ibb.co/0nd19zY/imovel11.jpg"
     },
     {
+        "id": 2,
         "name": "JBM203 - Suite vista mar resort",
         "description": "Jurerê internacional, 4 hospedes, 1 quartos",
         "maxGuests": 4,
@@ -32,10 +33,10 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "./imovel21.jpg",
-        "imageDetail": "./imovel22.jpg"
+        "image": "https://i.ibb.co/zncttYj/imovel21.jpg"
     },
     {
+        "id": 3,
         "name": "JBM204 - Suite vista mar resort",
         "description": "Jurerê internacional, 4 hospedes, 1 quartos",
         "maxGuests": 4,
@@ -50,10 +51,10 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "./imovel21.jpg",
-        "imageDetail": "./imovel22.jpg"
+        "image": "https://i.ibb.co/jkstdkG/imovel31.jpg"
     },
     {
+        "id": 4,
         "name": "JBM205 - Suite vista mar resort",
         "description": "Jurerê internacional, 4 hospedes, 1 quartos",
         "maxGuests": 4,
@@ -68,10 +69,10 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "./imovel21.jpg",
-        "imageDetail": "./imovel22.jpg"
+        "image": "https://i.ibb.co/3zvGmb6/imovel41.jpg"
     },
     {
+        "id": 5,
         "name": "JBM206 - Suite vista mar resort",
         "description": "Jurerê internacional, 4 hospedes, 1 quartos",
         "maxGuests": 4,
@@ -86,10 +87,10 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "./imovel21.jpg",
-        "imageDetail": "./imovel22.jpg"
+        "image": "https://i.ibb.co/J2pRF6m/imovel51.jpg"
     },
     {
+        "id": 6,
         "name": "JBM207 - Suite vista mar resort",
         "description": "Jurerê internacional, 4 hospedes, 1 quartos",
         "maxGuests": 4,
@@ -104,7 +105,6 @@
             "Estacionamento",
             "Elevador"
         ],
-        "image": "./imovel21.jpg",
-        "imageDetail": "./imovel22.jpg"
+        "image": "https://i.ibb.co/D9VBtMN/imovel61.jpg"
     }
 ]

@@ -14,8 +14,6 @@ function Properties() {
     })
   }, [])
 
-  console.log(imoveis)
-
   return (
     <Wrapper>
       <InfoWrapper>
@@ -31,9 +29,9 @@ function Properties() {
       </InfoWrapper>
       <PropertiesWrapper>
         {
-          imoveis.map((propertie, index) => {
+          imoveis.map((propertie) => {
             return (
-              <ItemWrapper>
+              <ItemWrapper key={propertie.id}>
                 <Link to={`/propriedades/detalhe/${propertie.id}`}>
                   <ImagePropertie src={propertie.image} key={propertie.name} />
                   <TitleItem>{propertie.name}</TitleItem>

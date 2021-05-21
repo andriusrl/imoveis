@@ -13,7 +13,11 @@
             "TV",
             "Wi-fi",
             "Estacionamento",
-            "Elevador"
+            "Elevador",
+            "Canais a Cabo",
+            "Jacuzzi",
+            "Toalhas",
+            "Porteiro"
         ],
         "image": "https://i.ibb.co/0nd19zY/imovel11.jpg"
     },
@@ -31,7 +35,11 @@
             "TV",
             "Wi-fi",
             "Estacionamento",
-            "Elevador"
+            "Elevador",
+            "Jacuzzi",
+            "Sofá",
+            "Itens Básicos de Banheiro",
+            "Cozinha Completa"
         ],
         "image": "https://i.ibb.co/zncttYj/imovel21.jpg"
     },
@@ -65,9 +73,12 @@
         "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
         "convenience": [
             "TV",
+            "internet",
             "Wi-fi",
             "Estacionamento",
-            "Elevador"
+            "Elevador",
+            "Piscina Privada",
+            "Ar Condicionado"
         ],
         "image": "https://i.ibb.co/3zvGmb6/imovel41.jpg"
     },
@@ -83,9 +94,14 @@
         "address": "AV. Búzios 1700, Jurerê internacional, Florianópolis - SC. CEP 89650-100",
         "convenience": [
             "TV",
-            "Wi-fi",
             "Estacionamento",
-            "Elevador"
+            "Elevador",
+            "Geladeira",
+            "Porteiro",
+            "Cabides",
+            "Toalhas",
+            "Sofá",
+            "Ar Condicionado"
         ],
         "image": "https://i.ibb.co/J2pRF6m/imovel51.jpg"
     },
@@ -103,7 +119,12 @@
             "TV",
             "Wi-fi",
             "Estacionamento",
-            "Elevador"
+            "Elevador",
+            "Microondas",
+            "Canais a Cabo",
+            "Jacuzzi",
+            "Itens Básicos de Banheiro",
+            "Piscina Privada"
         ],
         "image": "https://i.ibb.co/D9VBtMN/imovel61.jpg"
     }

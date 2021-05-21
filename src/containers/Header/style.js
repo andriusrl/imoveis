@@ -39,6 +39,14 @@ export const WrapperHeader = styled.div`
  display: flex;
  flex-direction: column;
  align-items: center;
+ a:link{
+    text-decoration: none;
+    color: white;
+  }
+ a:visited{
+    text-decoration: none;
+    color: white;
+ }
 `
 export const FilterTitleLabel = styled.h3`
  margin-bottom: 9px;
@@ -90,11 +98,13 @@ export const ButtonFind = styled.button`
     color: white;
     font-size: 14pt;
     font-weight: 400;
+    cursor: pointer;
 `
 export const ButtonMoreFilter = styled.a`
     color: #e83f3c;
     font-weight: 700;
     height: fit-content;
+    cursor: pointer;
 `
 export const ButtonFindWrapper = styled.div`
     align-self: flex-end;

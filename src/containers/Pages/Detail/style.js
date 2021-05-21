@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const PropertieDetailWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 18px;
 `
 export const ImagePropertieDetailWrapper = styled.div`
     margin-right: 60px;
@@ -17,7 +18,7 @@ export const DetailWrapper = styled.div`
 
 `
 export const Title = styled.h2`
-    margin: 9px 0 6px 0;
+    margin: 0 0 6px 0;
 `
 export const SubTitle = styled.p`
     margin: 0 0 12px 0;

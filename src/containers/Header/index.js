@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { HeaderValues } from "../providers/HeaderValues";
 import { WrapperFilter, Item, Logo, WrapperMenu, WrapperHeader, FilterTitleLabel, Select, Date, FilterDiv, ButtonIncrement, ButtonFind, ButtonMoreFilter, ButtonFindWrapper, Division } from "./style"
 
@@ -51,12 +50,12 @@ function Header() {
   return (
     <WrapperHeader>
       <WrapperMenu>
-        <Logo>seazone</Logo>
-        <Item>Calendário</Item>
-        <Item>Clientes</Item>
-        <Item>Orçamentos</Item>
-        <Item>Propriedades</Item>
-        <Item>Controle</Item>
+        <Logo><a href="/" >seazone</a></Logo>
+        <Item><a href="/calendario/">Calendário</a></Item>
+        <Item><a href="/clientes/">Clientes</a></Item>
+        <Item><a href="/orcamentos/">Orçamentos</a></Item>
+        <Item><a href="/propriedades/">Propriedades</a></Item>
+        <Item><a href="/controle/">Controle</a></Item>
       </WrapperMenu>
       {showFilter()}
       <Division/>

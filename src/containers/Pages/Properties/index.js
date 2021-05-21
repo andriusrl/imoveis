@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HeaderValues } from "../../providers/HeaderValues";
 import imoveis from "../../imoveis/imoveis.json"
-import imagem from "../../imoveis/imovel11.jpg"
-import {ImagePropertie, InfoWrapper, PropertiesWrapper} from "./style"
+import imagem from "../../imoveis/imovel61.jpg"
+import { ImagePropertie2, ImagePropertie, InfoWrapper, PropertiesWrapper } from "./style"
 
 function Properties() {
   const { headerValues, setHeaderValues } = HeaderValues()
@@ -28,16 +28,17 @@ function Properties() {
         {
           imoveis.map((propertie, index) => {
             return (
-              <div key={propertie.name}>
-                {/* <img src="https://i.ibb.co/xf84XyP/imovel11.jpg" /> */}
-                <ImagePropertie src={imagem} />
-                <h2>{propertie.name}</h2>
-                <h3>{propertie.description}</h3>
-                <p>{propertie.maxGuests}</p>
-                <p>{propertie.cleaningFee}</p>
-                <p>{propertie.guarantee}</p>
-                <p>{propertie.district}</p>
-              </div>
+              <Link to="/propriedades/detalhe">
+                <div key={propertie.name}>
+                  <ImagePropertie src={propertie.image} />
+                  <h2>{propertie.name}</h2>
+                  <h3>{propertie.description}</h3>
+                  <p>{propertie.maxGuests}</p>
+                  <p>{propertie.cleaningFee}</p>
+                  <p>{propertie.guarantee}</p>
+                  <p>{propertie.district}</p>
+                </div>
+              </Link>
             )
           })
         }

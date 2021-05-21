@@ -20,8 +20,10 @@ function Properties() {
   return (
     <div>
       <InfoWrapper>
-        <h2>Todos os imóveis</h2>
-        <h3>6 imóveis</h3>
+        <div>
+          <h2>Todos os imóveis</h2>
+          <h3>6 imóveis</h3>
+        </div>
         <button>Ordenar</button>
       </InfoWrapper>
       <PropertiesWrapper>

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HeaderValues } from "../providers/HeaderValues";
-import { WrapperFilter, Item, Logo, WrapperMenu } from "./style"
+import { WrapperFilter, Item, Logo, WrapperMenu, WrapperHeader, FilterTitleLabel, Select, Date, FilterDiv, ButtonIncrement, ButtonFind, ButtonMoreFilter, ButtonFindWrapper, Division } from "./style"
 
 function Header() {
   const { headerValues, setHeaderValues } = HeaderValues()
@@ -13,35 +13,43 @@ function Header() {
       return (
         <WrapperFilter>
           <div>
-            <p>Localização</p>
-            <select name="localization">
+            <FilterTitleLabel>Localização</FilterTitleLabel>
+            <Select name="localization">
               <option>Florianópolis</option>
-            </select>
+            </Select>
           </div>
           <div>
-            <p>Preço</p>
-            <select name="localization">
+            <FilterTitleLabel>Preço</FilterTitleLabel>
+            <Select name="localization">
               <option>300-10000</option>
-            </select>
+            </Select>
           </div>
           <div>
-            <p>Check-in</p>
-            <input type="date" />
+            <FilterTitleLabel>Check-in</FilterTitleLabel>
+            <Date type="date" />
           </div>
           <div>
-            <p>Check-out</p>
-            <input type="date" />
+            <FilterTitleLabel>Check-out</FilterTitleLabel>
+            <Date type="date" />
           </div>
           <div>
-            <p>N° de hóspedes</p>
-            <div>2</div>
+            <FilterTitleLabel>N° de hóspedes</FilterTitleLabel>
+            <FilterDiv>
+              <ButtonIncrement>-</ButtonIncrement>
+              2
+              <ButtonIncrement>+</ButtonIncrement>
+            </FilterDiv>
           </div>
+          <ButtonFindWrapper>
+            <ButtonFind>Buscar</ButtonFind>
+            <ButtonMoreFilter>+ Mais filtros</ButtonMoreFilter>
+          </ButtonFindWrapper>
         </WrapperFilter>
       )
     }
   }
   return (
-    <div>
+    <WrapperHeader>
       <WrapperMenu>
         <Logo>seazone</Logo>
         <Item>Calendário</Item>
@@ -51,7 +59,8 @@ function Header() {
         <Item>Controle</Item>
       </WrapperMenu>
       {showFilter()}
-    </div>
+      <Division/>
+    </WrapperHeader>
   );
 }
 

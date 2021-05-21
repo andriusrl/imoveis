@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const InfoWrapper = styled.div`
     display: flex;
+    justify-content: space-between;
+    /* justify-self: c; */
+    h2 {
+
+    }
+    @media (min-width: 1024px) {
+        width: 1024px;
+    }
 `
 export const ImagePropertie = styled.img`
   object-fit: none;

@@ -24,4 +24,4 @@ yarn-error.log*
 yarn.lock
 package-lock.json
 /src/imoveis.json
-src/containers/imoveis/
+/src/containers/imoveis/

@@ -15,7 +15,7 @@ export const ImagePropertieDetail = styled.img`
   width: 320px;
 `
 export const DetailWrapper = styled.div`
-
+    margin: 30px;
 `
 export const Title = styled.h2`
     margin: 0 0 6px 0;
@@ -101,4 +101,16 @@ export const UlConvenience = styled.ul`
     padding: 20px;
     margin: 0;
 `
-
+export const ArrowWrapper = styled.p`
+    margin: 0;
+    color: #828787;
+    font-weight: 500;
+    a:link{
+        text-decoration: none;
+        color: #828787;
+     }
+    a:visited{
+        text-decoration: none;
+        color: #828787;
+    }
+`

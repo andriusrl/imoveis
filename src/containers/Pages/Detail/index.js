@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import imoveis from "../../imoveis/imoveis.json"
 import { HeaderValues } from "../../providers/HeaderValues";
-import { StatusFalse, StatusTrue, Detail2, Title, SubTitle, Detail1, BoxBorder, Division, DetailWrapper, ImagePropertieDetailWrapper, PropertieDetailWrapper, ImagePropertieDetail, LiConvenience, LiYes, LiNo, UlConvenience } from "./style"
+import { StatusFalse, StatusTrue, Detail2, Title, SubTitle, Detail1, BoxBorder, Division, DetailWrapper, ImagePropertieDetailWrapper, PropertieDetailWrapper, ImagePropertieDetail, LiConvenience, LiYes, LiNo, UlConvenience, ArrowWrapper } from "./style"
 
 function Detail() {
   const { headerValues, setHeaderValues } = HeaderValues()
@@ -19,6 +19,9 @@ function Detail() {
   return (
     <PropertieDetailWrapper>
       <ImagePropertieDetailWrapper>
+        <ArrowWrapper>
+          <Link to="/propriedades" >Imóveis {">"} {propertieDetail.district}</Link>
+        </ArrowWrapper>
         <ImagePropertieDetail src={propertieDetail?.image} />
         <h3>Localização</h3>
         <p>{propertieDetail?.description}</p>
@@ -35,7 +38,6 @@ function Detail() {
               </li>
             </ul>
           </SubTitle>
-
         </div>
         <div>
           <Division />
